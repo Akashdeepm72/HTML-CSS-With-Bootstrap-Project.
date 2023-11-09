@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+integrity="sha384-
+Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+crossorigin="anonymous">
+ <title>profile - Bill Gates</title>
+ <style>
+    .card {
+      position: relative;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color:whitesmoke ;
+    border-color: gray;
+    }
+
+    .card .card-heading {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color:whitesmoke;
+      font-size: 24px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+ </head>
+ <body>
+ <div class="container">
+ <ul class="nav nav-pills">
+ <li class="nav-item">
+ <a class="nav-link" href="index.html">Home</a>
+ </li>
+ <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#"
+role="button" aria-haspopup="true" aria-expanded="false">Profiles</a>
+ <div class="dropdown-menu">
+    <!--Drop down menu-->
+ <a class="dropdown-item" href="john.html">John Abraham</a>
+ <a class="dropdown-item" href="jeff.html">Jeff Bezos</a>
+ <a class="dropdown-item" href="bill.html">Bill Gates</a>
+ <a class="dropdown-item" href="mukesh.html">Mukesh Ambani</a>
+ </div>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link" href="about.html">About us</a>
+ </li>
+ <li class="nav-item">
+ <a class="nav-link disabled" href="#">Logout</a>
+ </li>
+ </ul>
+<!--Main heading-->
+ <h1>Bill Gates Profile</h1>
+
+ <div class="row">
+ <div class="col-lg-9 col-sm-6 col-xs-12">
+    <!--Card and  details-->
+ <div class="card">
+ <img class="card-img-top" src="data:image/jpeg;base64,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" alt="bill gate" style="height: 400px;">
+ <div class="card-body">
+ <h5 class="card-heading">Bill Gates</h5
+    <p class="card-text">William Henry Gates(born October 28, 1955) III is an American business magnate,
+        software developer, investor, author, and philanthropist. He is a co-founder of Microsoft,
+        along with his late childhood friend Paul Allen. born at 28 October 1955 in america.</p>
+         </div>
+         </div>
+         </div>
+         </div>
+         <!-- Optional JavaScript -->
+         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-
+        KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-
+        ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-
+        JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+         </body>
+        </html> 
